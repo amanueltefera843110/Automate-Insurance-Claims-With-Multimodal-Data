@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+
+# Environment
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# PDF and uploads
+uploads/
+*.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Build
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+
+# Misc
+*.swp
+*.bak

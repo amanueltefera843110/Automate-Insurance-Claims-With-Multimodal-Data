@@ -66,3 +66,17 @@ See `requirements.txt` for the full list.
 MIT License
 # Automate-Insurance-Claims-With-Multimodal-Data
 # Automate-Insurance-Claims-With-Multimodal-Data
+
+## Voice assistant API
+
+A FastAPI service is available for context-aware voice interactions without exposing transcripts.
+
+1. Install dependencies and set `OPENAI_API_KEY` in your environment.
+2. Start the server:
+   ```bash
+   uvicorn voice_assistant:app --reload
+   ```
+3. Endpoints:
+   - `POST /upload_context` — upload a text file containing background context.
+   - `POST /process_audio` — upload an audio file (e.g., webm/ogg) and receive only the model's answer.
+   - `POST /reset_context` — clear stored context and conversation history.
